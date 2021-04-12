@@ -1,0 +1,7 @@
+dask
+jupyterlab
+pytest
+coverage
+pytest-cov
+pylint
+PyYaml
