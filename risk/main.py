@@ -2,7 +2,6 @@ import os
 import sys
 
 import logging
-import collections
 
 
 def main():
@@ -26,9 +25,11 @@ def main():
     # pollutants function returns a DataFrame of mapped names wherein the field 'chemical' always has
     # the standard names.  This ensures the retrievability of each pollutant's chemical identification code.
     toxins = pollutants.exc(compounds=list(data.columns[5:]))
+    logger.info(toxins.info())
 
     # ... retrieve each pollutant's chemical identification code
     toxins = toxins.merge(chemicals.exc(), how='left', on='chemical')
+    logger.info(toxins.info())
 
     # ... the mapping of pollutant field name & chemical identification code; dictionary form
     mappings = toxins[['field', 'tri_chem_id']].set_index(keys='field', drop=True, inplace=False)\
@@ -36,7 +37,10 @@ def main():
 
     # Hence, rename the pollutant fields
     data.rename(columns=mappings, inplace=True)
-    collections.namedtuple(typename='Files', field_names=['data', ''])
+    logger.info('{}'.format(data.head().iloc[:, :7]))
+
+    # Save
+    write.exc(data=data, toxins=toxins[['tri_chem_id', 'chemical', 'field']], label=descriptor)
 
 
 if __name__ == '__main__':
@@ -58,12 +62,14 @@ if __name__ == '__main__':
 
     # Libraries
     import risk.functions.directories
+    import risk.functions.write
     import risk.algorithms.estimates
     import risk.algorithms.pollutants
     import risk.algorithms.chemicals
     import risk.geography.updates
 
     directories = risk.functions.directories.Directories()
+    write = risk.functions.write.Write()
     estimates = risk.algorithms.estimates.Estimates()
     pollutants = risk.algorithms.pollutants.Pollutants(synonyms=configurations.synonyms)
     chemicals = risk.algorithms.chemicals.Chemicals()
