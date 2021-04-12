@@ -44,7 +44,7 @@ In relation to requirements.txt
 
 Examples:
 
-* concentrations.ipynb <br> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/vetiveria/risk/blob/develop/notebooks/concentrations.ipynb)
+* concentrations.ipynb <br> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vetiveria/risk/blob/develop/notebooks/concentrations.ipynb)
 
 <br>
 
