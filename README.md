@@ -42,7 +42,7 @@ In relation to requirements.txt
 
 #### Exploring Underlying Concentrations
 
-Examples:
+The concentration measures, estimates, per tract can be explored via chemical database files.  For each toxic chemical tracked by the Environmental Protection Agencythe Agency provides a concentrations database file.  The `concentrations` notebook illustrates how such files can be queried via Python:
 
 * concentrations.ipynb <br> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vetiveria/risk/blob/develop/notebooks/concentrations.ipynb)
 
