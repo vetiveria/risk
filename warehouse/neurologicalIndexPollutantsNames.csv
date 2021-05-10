@@ -1,0 +1,25 @@
+tri_chem_id,chemical,field
+0000121142,"2,4-dinitrotoluene","2,4-dinitrotoluene"
+0000079061,acrylamide,acrylamide
+0000107051,allyl chloride,allyl chloride
+0000092875,benzidine,benzidine
+0001319773,cresol (mixed isomers),cresol_cresylic acid (mixed isomers)
+N106,cyanide compounds,cyanide compounds
+0000156627,calcium cyanamide,calcium cyanamide
+0000075150,carbon disulfide,carbon disulfide
+0000463581,carbonyl sulfide,carbonyl sulfide
+0000062737,dichlorvos,dichlorvos
+0000075218,ethylene oxide,ethylene oxide
+0000067721,hexachloroethane,hexachloroethane
+0000110543,n-hexane,hexane
+N420,lead compounds,lead compounds
+N450,manganese compounds,manganese compounds
+N458,mercury compounds,mercury compounds
+0000074873,chloromethane,methyl chloride (chloromethane)
+0000071556,"1,1,1-trichloroethane","1,1,1-trichloroethane"
+N725,selenium compounds,selenium compounds
+0000100425,styrene,styrene
+0000127184,tetrachloroethylene,tetrachloroethylene
+0000108883,toluene,toluene
+0000079016,trichloroethylene,trichloroethylene
+0001330207,xylene (mixed isomers),xylenes (mixed isomers)
