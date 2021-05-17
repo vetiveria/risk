@@ -30,7 +30,7 @@ class Updates:
 
         for initial, latest in identifiers.items():
 
-            indices: pd.Series = blob['countygeoid'] == initial
+            indices: pd.Series = blob['countygeoid'].eq(initial)
             if not indices.any():
                 continue
             else:
