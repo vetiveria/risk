@@ -9,8 +9,7 @@ class Config:
 
         """
 
-        self.unresolved = ['diesel pm', 'hexamethylene diisocyanate', 'isophorone',
-                           'coke oven emissions', 'ethyl carbamate (urethane) chloride (chloroethane)', 'pahpom']
+        self.unresolved = ['diesel pm',  'hexamethylene diisocyanate', 'isophorone', 'coke oven emissions', 'ethyl carbamate (urethane) chloride (chloroethane)', 'pahpom']
 
         self.synonyms = {'cresol_cresylic acid (mixed isomers)': 'cresol (mixed isomers)',
                          'methyl chloride (chloromethane)': 'chloromethane',
