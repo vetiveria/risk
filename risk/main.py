@@ -53,10 +53,11 @@ def main():
     data.rename(columns=mappings, inplace=True)
     logger.info('{}'.format(data.head().iloc[:, :7]))
 
-    # Save
+    # Drop the/any 'total' columns
     data.drop(columns=data.columns[boundaries].tolist(), inplace=True)
     logger.info(data.info())
 
+    # Save
     write.exc(data=data, toxins=toxins[['tri_chem_id', 'chemical', 'field']], label=descriptor)
 
 
