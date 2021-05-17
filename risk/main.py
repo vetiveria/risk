@@ -24,7 +24,8 @@ def main():
     logger.info(data.info())
 
     # Drop any unresolved compounds
-    data.drop(columns=configurations.unresolved, inplace=True)
+    drop = data.columns[data.columns.isin(configurations.unresolved)].to_list()
+    data.drop(columns=drop, inplace=True)
     logger.info(data.info())
 
     # Update old geographic codes
