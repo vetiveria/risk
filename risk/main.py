@@ -14,17 +14,31 @@ def main():
     url = 'https://www.epa.gov/sites/production/files/2018-08/nata2014v2_national_neurhi_by_tract_poll.xlsx'
     descriptor = 'neurologicalIndexPollutants'
 
+    strings: dict = configurations.source()
+
+    for key, value in strings.items():
+        print(key, value)
+
     # Hence
     data = estimates.exc(url=url)
+    logger.info(data.info())
+
+    # Drop any unresolved compounds
+    data.drop(columns=configurations.unresolved, inplace=True)
     logger.info(data.info())
 
     # Update old geographic codes
     data = updates.exc(blob=data.copy(), identifiers=configurations.identifiers)
 
+    # Boundaries courtesy of 'total' cells
+    indices = data.columns.get_indexer(data.columns)
+    boundaries = indices[data.columns.str.startswith('total')]
+    start = 1 + boundaries[0]
+
     # A number of the field names are pollutant names, but not all the names are standard names.  The
     # pollutants function returns a DataFrame of mapped names wherein the field 'chemical' always has
     # the standard names.  This ensures the retrievability of each pollutant's chemical identification code.
-    toxins = pollutants.exc(compounds=list(data.columns[5:]))
+    toxins = pollutants.exc(compounds=list(data.columns[start:]))
     logger.info(toxins.info())
 
     # ... retrieve each pollutant's chemical identification code
@@ -40,6 +54,9 @@ def main():
     logger.info('{}'.format(data.head().iloc[:, :7]))
 
     # Save
+    data.drop(columns=data.columns[boundaries].tolist(), inplace=True)
+    logger.info(data.info())
+
     write.exc(data=data, toxins=toxins[['tri_chem_id', 'chemical', 'field']], label=descriptor)
 
 
