@@ -35,5 +35,5 @@ class Write:
         :return:
         """
 
-        self.save(blob=data, basename='{}.csv'.format(label))
+        self.save(blob=data, basename='{}NATA2014V2.csv'.format(label))
         self.save(blob=toxins, basename='{}Names.csv'.format(label))

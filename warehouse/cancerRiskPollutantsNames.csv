@@ -1,0 +1,69 @@
+tri_chem_id,chemical,field
+0000079005,"1,1,2-trichloroethane","1,1,2-trichloroethane"
+0000096128,"1,2-dibromo-3-chloropropane","1,2-dibromo-3-chloropropane"
+0000122667,"1,2-diphenylhydrazine","1,2-diphenylhydrazine"
+0000319846,alpha-hexachlorocyclohexane,"1,2,3,4,5,6-hexachlorocyclyhexane"
+0000106990,"1,3-butadiene","1,3-butadiene"
+0000542756,"1,3-dichloropropylene","1,3-dichloropropene"
+0001120714,"1,3-propane sultone","1,3-propane sultone"
+0000106467,"1,4-dichlorobenzene","1,4-dichlorobenzene"
+0000053963,2-acetylaminofluorene,2-acetylaminofluorene
+0000079469,2-nitropropane,2-nitropropane
+0000121142,"2,4-dinitrotoluene","2,4-dinitrotoluene"
+0000584849,"toluene-2,4-diisocyanate","2,4-toluene diisocyanate"
+0000088062,"2,4,6-trichlorophenol","2,4,6-trichlorophenol"
+0000091941,"3,3'-dichlorobenzidine","3,3'-dichlorobenzidine"
+0000060117,4-dimethylaminoazobenzene,4-dimethylaminoazobenzene
+0000101144,"4,4'-methylenebis(2-chloroaniline)","4,4'-methylene bis(2-chloroaniline)"
+0000101779,"4,4'-methylenedianiline","4,4'-methylenedianiline"
+0000075070,acetaldehyde,acetaldehyde
+0000060355,acetamide,acetamide
+0000079061,acrylamide,acrylamide
+0000107131,acrylonitrile,acrylonitrile
+0000107051,allyl chloride,allyl chloride
+0000062533,aniline,aniline
+N020,arsenic compounds,arsenic compounds(inorganic including arsine)
+0000071432,benzene,benzene
+0000092875,benzidine,benzidine
+0000100447,benzyl chloride,benzyl chloride
+N050,beryllium compounds,beryllium compounds
+0000117817,di(2-ethylhexyl) phthalate,bis(2-ethylhexyl)phthalate (dehp)
+0000542881,bis(chloromethyl) ether,bis(chloromethyl) ether
+0000075252,bromoform,bromoform
+0007440473,chromium,chromium vi (hexavalent)
+N078,cadmium compounds,cadmium compounds
+0000056235,carbon tetrachloride,carbon tetrachloride
+0000057749,chlordane,chlordane
+0000510156,chlorobenzilate,chlorobenzilate
+0000126998,chloroprene,chloroprene
+0000111444,bis(2-chloroethyl) ether,dichloroethyl ether (bis[2-chloroethyl]ether)
+0000106898,epichlorohydrin,epichlorohydrin
+0000100414,ethylbenzene,ethylbenzene
+0000106934,"1,2-dibromoethane",ethylene dibromide (dibromoethane)
+0000107062,"1,2-dichloroethane","ethylene dichloride (1,2-dichloroethane)"
+0000075218,ethylene oxide,ethylene oxide
+0000096457,ethylene thiourea,ethylene thiourea
+0000075343,ethylidene dichloride,"ethylidene dichloride (1,1-dichloroethane)"
+0000050000,formaldehyde,formaldehyde
+0000076448,heptachlor,heptachlor
+0000118741,hexachlorobenzene,hexachlorobenzene
+0000087683,"hexachloro-1,3-butadiene",hexachlorobutadiene
+0000302012,hydrazine,hydrazine
+0001634044,methyl tert-butyl ether,methyl tert-butyl ether
+0000075092,dichloromethane,methylene chloride
+0000062759,n-nitrosodimethylamine,n-nitrosodimethylamine
+0000059892,n-nitrosomorpholine,n-nitrosomorpholine
+N495,nickel compounds,nickel compounds
+0000091203,naphthalene,naphthalene
+0000098953,nitrobenzene,nitrobenzene
+0001336363,polychlorinated biphenyls,polychlorinated biphenyls (aroclors)
+0000087865,pentachlorophenol,pentachlorophenol
+0000075569,propylene oxide,propylene oxide
+0000127184,tetrachloroethylene,tetrachloroethylene
+0000095807,"2,4-diaminotoluene","2,4-toluene diamine"
+0008001352,toxaphene,toxaphene (chlorinated camphene)
+0000079016,trichloroethylene,trichloroethylene
+0000593602,vinyl bromide,vinyl bromide
+0000075014,vinyl chloride,vinyl chloride
+0000095534,o-toluidine,o-toluidine
+0000123911,"1,4-dioxane","1,4-dioxane"
