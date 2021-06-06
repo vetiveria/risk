@@ -30,7 +30,6 @@ And, `.pylintrc` is created via command
 
 ## Notes
 
-<br>
 
 ### Exploring Underlying Concentrations
 
