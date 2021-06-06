@@ -1,37 +1,27 @@
 <br>
 
-## Risk
-
 About the [National Air Toxics Assessment](https://www.epa.gov/national-air-toxics-assessment) of the United 
 States [Environmental Protection Agency](https://www.epa.gov/)
 
 <br>
 
+* [Development Environment](#development-environment)
+* [Notes](#notes)
+
+<br>
+
 ### Development Environment
 
-In preparation for Docker, etc.
+Locally, it uses the development environment `environment`; the environment is detailed within [spots](https://github.
+com/vetiveria/spots#development-environment).  The `requirements.txt` file is created via
 
-<br>
-
-#### Anaconda
-
-Refer to [spots](https://github.com/vetiveria/spots#development-environment)
-
-<br>
-
-#### Requirements
-
-In relation to requirements.txt
-
-```markdown
+```shell
     pip freeze -r docs/filter.txt > requirements.txt
 ```
 
-<br>
+And, `.pylintrc` is created via command
 
-#### Conventions
-
-```markdown
+```shell
     pylint --generate-rcfile > .pylintrc
 ```
 
