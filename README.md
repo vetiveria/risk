@@ -10,7 +10,7 @@ States [Environmental Protection Agency](https://www.epa.gov/)
 
 <br>
 
-### Development Environment
+## Development Environment
 
 Locally, it uses the development environment `environment`; the environment is detailed within [spots](https://github.
 com/vetiveria/spots#development-environment).  The `requirements.txt` file is created via
@@ -28,9 +28,9 @@ And, `.pylintrc` is created via command
 <br>
 <br>
 
-### Notes
+## Notes
 
-#### Exploring Underlying Concentrations
+### Exploring Underlying Concentrations
 
 The concentration measures, estimates, per tract can be explored via chemical database files.  For each toxic chemical tracked by the Environmental Protection Agencythe Agency provides a concentrations database file.  The `concentrations` notebook illustrates how such files can be queried via Python:
 
@@ -38,7 +38,7 @@ The concentration measures, estimates, per tract can be explored via chemical da
 
 <br>
 
-#### Pollutants Data
+### Pollutants Data
 
 * base/root: https://www.epa.gov/sites/production/files/2018-08/nata2014v2_national_
 
@@ -51,7 +51,7 @@ The concentration measures, estimates, per tract can be explored via chemical da
 
 <br>
 
-#### Risk Groups Data
+### Risk Groups Data
 
 * base/root: https://www.epa.gov/sites/production/files/2018-08/nata2014v2_national_
 
